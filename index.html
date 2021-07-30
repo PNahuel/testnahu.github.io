@@ -4,12 +4,59 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>WEB!</title>
+        <title>Magic Bros</title>
 
         <link href="https://bootswatch.com/5/simplex/bootstrap.min.css" rel="stylesheet">
         <link href="css/estilos.css" rel="stylesheet">
-
-
+        <style>
+        div.gallery {
+          border: 1px solid #ccc;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .responsive {
+          padding: 0 6px;
+          float: left;
+          width: 24.99999%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+          }
+        }
+        
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+        
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+        
     </head>
     <body>
 
@@ -17,7 +64,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand">Magic Bros</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -25,105 +72,88 @@
               <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Home
+                    <a class="nav-link active" href="#">Inicio
                       <span class="visually-hidden">(current)</span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Mercado Libre</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Sobre nosotros</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Singles</a>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#">Standar</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="#">Modern</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Legacy</a>
+                      <div class="dropdown-divider"></div>
                     </div>
                   </li>
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-sm-2" type="text" placeholder="Search">
-                  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
               </div>
-            </div>
           </nav>
           
-          
-        <h1>TITULO</h1>
-        <h2>Example body text</h2>
+        <h1><strong>Bienvenido</strong></h1>
 
-        <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-        <p><small>This line of text is meant to be treated as fine print.</small></p>
-        <p>The following is <strong>rendered as bold text</strong>.</p>
-        <p>The following is <em>rendered as italicized text</em>.</p>
-        <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
-
-        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h4 class="card-title">Dark card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </div>
+        <h3>Pudes visitar nuestra pagina de <a href="#">Mercado Libre</a> para realizar compras desde la web o puedes comunicarte con nosotros por <a href="https://wa.me/5492634256064">Whatsapp.</a></h3>
+        
+        
 
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <h1>PRUEBA COLUMNA TAMAÑO 4 QUE OCUPA TODO EL ESPACIO EN SU DIV</h1>
+          <div class="row">
+              <div class="col-md-3">
+                <div class="responsive">    
                 </div>
-                <div class="col-md-8">
-                    <h1>PRUEBA COLUMNA TAMAÑO 8 QUE OCUPA TODO EL ESPACIO DISPONIBLE EN SU DIV</h1>
+              </div>
+              <div class="col-md-6">
+                  <div class="alert alert-dismissible alert-success">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    <strong>ATENCIÓN</strong> Esta pagina aun esta en crecimiento, agradecemos cualquier bug enviarlo a nahuel5588@gmail.com</a>.
+                  </div>
                 </div>
-            </div>
+              </div>
 
-        </div>
+              <div class="col-md-3">
+               </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-4">
+                        <div class="responsive">    
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <h1><strong>ULTIMAS NOVEDADES</strong></h1>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                       </div>
+                        </div>
 
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-4">
+                <div class="responsive">
+ 
+                      <img src="img/GarrukWildspeaker.jpg" alt="Cinque Terre" width="320" height="400">
 
-        <script src="js/jquery.min.js"></script>
+                </div>
+              </div>
+              <div class="col-md-8">
+                  <h1>test<br>
+                    test<br>
+                    test
+                  </h1><button type="button" class="btn btn-outline-success">Success</button>
+              </div>
+          </div>
+
+      </div>
+
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/sha1.js"></script>
+
     </body>
 </html>
-
-
-
-
-<!--
-
-https://bootswatch.com/5/vapor/bootstrap.min.css
-
-     <header class="p-3 bg-dark text-white">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-        </ul>
-
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-        </form>
-
-        <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Sign-up</button>
-        </div>
-      </div>
-    </div>
-  </header>
