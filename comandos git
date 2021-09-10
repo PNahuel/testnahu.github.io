@@ -1,0 +1,13 @@
+comandos en github.
+
+Verificar el estado del repositorio
+       ejecutar: git status
+---------------------------------------------------------------------------------------------------------
+Agregar nuevos archivos
+      ejecutar: git add .
+---------------------------------------------------------------------------------------------------------
+Realizar un commit de los archivos nuevos o modificaciones
+          Ejecutar: git commit -m "descripcion de la modificacion"
+---------------------------------------------------------------------------------------------------------
+Subir los cambios al repositorio de gitlab.
+       Ejecutar: git push

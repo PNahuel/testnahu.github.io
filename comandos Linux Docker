@@ -1,0 +1,25 @@
+------------------------------------------------------------------------------------------------
+sudo docker run --name nginx -d -p 80:80 -v $HOME/docker/nginx:/usr/share/nginx/html:ro nginx
+
+Este codigo crea un contenedor de nginx en docker en la parte que dice "$HOME/docker/nginx" es la carpeta donde se guardan los contenidos de este directorio "/usr/share/nginx/html" con el puerto 80:80 que es el puerto por deefecto del http, podemos agregarle el puerto 443 que es el https("S" es de segure)
+
+------------------------------------------------------------------------------------------------
+sudo docker exec mysql_uno sh -c 'exec mysqldump --databases TP1_Palacio -uroot -p"12345678"' > /home/nahu/tp_1_Palacio.sql
+
+Con este codigo podemos exportar cualquier base de datos en MySQL a continuacion explico para que sirve cada parte
+"exec mysql_uno": este es el nombre del contenedor que contiene la imagen de MySQL
+"--databases TP1_Palacio": Aqui va el nombre de la base de datos
+"-p"12345678"": Aqui va la contraseña(Password) que tenga el contenedor
+"> /home/nahu/tp_1_Palacio.sql": Aqui va la ruta donde se guardara el archivo SQL, la ultima parte (tp_1_Palacio.sql) es el nombre con el que queda el archivo final, recordar siempre terminarlo con un .sql
+------------------------------------------------------------------------------------------------
+sudo docker volume create portainer_data
+
+docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+
+Con estos comandos creamos Portainer en docker en el puerto 9000.... con el cual ingresamos mediante un navegador de internet en "localhost:9000"
+------------------------------------------------------------------------------------------------
+sudo docker run -itd -p 33066:3306 -e MYSQL_ROOT_PASSWORD=12345678 --name mysql_uno mysql
+
+Con este comando creamos un contenedor de mysql con una contraseña con un nombre para verlo en portainer y los puertos
+
+docker run --name myadmin -d --link mysql_uno:TP1_Palacio -p 8080:80 phpmyadmin
