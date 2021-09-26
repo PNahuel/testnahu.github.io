@@ -1,134 +1,183 @@
-<!doctype html>
-<html lang='es'>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>E-Biblioteca</title>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E-Biblioteca</title>
 
-        <link href="https://bootswatch.com/5/simplex/bootstrap.min.css" rel="stylesheet">
-        <link href="css/estilos.css" rel="stylesheet">
-        <style>
-        div.gallery {
-          border: 1px solid #ccc;
-        }
-        
-        div.gallery:hover {
-          border: 1px solid #777;
-        }
-        
-        div.gallery img {
-          width: 100%;
-          height: auto;
-        }
-        
-        div.desc {
-          padding: 15px;
-          text-align: center;
-        }
-        
-        * {
-          box-sizing: border-box;
-        }
-        
+    <link
+      href="https://bootswatch.com/5/simplex/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/estilos.css" rel="stylesheet" />
+    <style>
+      div.gallery {
+        border: 1px solid #ccc;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+
+      @media only screen and (max-width: 700px) {
         .responsive {
-          padding: 0 6px;
-          float: left;
-          width: 24.99999%;
+          width: 49.99999%;
+          margin: 6px 0;
         }
-        
-        @media only screen and (max-width: 700px) {
-          .responsive {
-            width: 49.99999%;
-            margin: 6px 0;
-          }
-        }
-        
-        @media only screen and (max-width: 500px) {
-          .responsive {
-            width: 100%;
-          }
-        }
-        
-        .clearfix:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        </style>
-        
-    </head>
-    <body>
+      }
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand">E-Biblioteca</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          
-              <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav me-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Inicio
-                      <span class="visually-hidden">(current)</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="autoridad.html">Autoridades</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="proyecto.html">Proyecto</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Carreras</a>
-                    <div class="dropdown-menu">
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="compu.html">Computación y Redes</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="optica.html">Optica y contactologia</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="gastro.html">Gastronomia</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="podo.html">Podologia</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="meca.html">Mecatronica</a>
-                      <div class="dropdown-divider"></div>
-                    </div>
-                  </li>
-                </ul>
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">E-Biblioteca</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"
+                >Inicio
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="autoridad.html">Autoridades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="proyecto.html">Proyecto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Carreras</a
+              >
+              <div class="dropdown-menu">
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="compu.html"
+                  >Computación y Redes</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="optica.html"
+                  >Optica y contactologia</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="gastro.html">Gastronomia</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="podo.html">Podologia</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="meca.html">Mecatronica</a>
+                <div class="dropdown-divider"></div>
               </div>
-          </nav>
-            
-            <div class="container-fluid">
-              <div class="row">
-                  <div class="col-lg-2" style="background-color:rgb(228, 122, 36)">
-                    <div class="responsive" >    
-                      <h1>COLUMNA2</h1>
-                    </div>
-                  </div>
-                  <div class="col-lg-8" style="background-color:rgb(168, 168, 172)">
-                    <br>
-                    <center><h1 class="title">Lorem, ipsum dolor.</h1></center>
-                    <div class="container-all">
-                      <center><h1 class="title">Lorem ipsum dolor sit amet.</h1></center>
-                    <img src="images/usuario.jpg" width="200" height="200" > 
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius vero fugiat ex sint labore numquam neque eligendi est id enim ipsum tempora quos vel, ipsa aliquam praesentium rerum dignissimos, explicabo quo. Magni nisi, eligendi neque illum quo nihil, praesentium sunt repellendus perferendis, laboriosam cumque?</h3>
-                  </div>
-                  </div>      
-                   <div class="col-lg-2" style="background-color:rgb(187, 25, 25)">
-                     <h1>COLUMNA2</h1>
-                   </div>
-              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2" style="background-color: rgb(228, 122, 36)">
+          <div class="responsive">
+            <h1>COLUMNA2</h1>
           </div>
+        </div>
+        <div class="col-lg-8" style="background-color: rgb(168, 168, 172)">
+          <br />
+          <center><h1 class="title">Lorem, ipsum dolor.</h1></center>
+          <div class="container-all">
+            <center><h1 class="title">Lorem ipsum dolor sit amet.</h1></center>
+            <img src="images/usuario.jpg" width="200" height="200" />
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              eius vero fugiat ex sint labore numquam neque eligendi est id enim
+              ipsum tempora quos vel, ipsa aliquam praesentium rerum
+              dignissimos, explicabo quo. Magni nisi, eligendi neque illum quo
+              nihil, praesentium sunt repellendus perferendis, laboriosam
+              cumque?
+            </h3>
+          </div>
+          <div class="container-all">
+            <center><h1 class="title">Lorem ipsum dolor sit amet.</h1></center>
+            <img src="images/usuario.jpg" width="200" height="200" />
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              eius vero fugiat ex sint labore numquam neque eligendi est id enim
+              ipsum tempora quos vel, ipsa aliquam praesentium rerum
+              dignissimos, explicabo quo. Magni nisi, eligendi neque illum quo
+              nihil, praesentium sunt repellendus perferendis, laboriosam
+              cumque?
+            </h3>
+          </div>
+          <div class="container-all">
+            <center><h1 class="title">Lorem ipsum dolor sit amet.</h1></center>
+            <img src="images/usuario.jpg" width="200" height="200" />
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              eius vero fugiat ex sint labore numquam neque eligendi est id enim
+              ipsum tempora quos vel, ipsa aliquam praesentium rerum
+              dignissimos, explicabo quo. Magni nisi, eligendi neque illum quo
+              nihil, praesentium sunt repellendus perferendis, laboriosam
+              cumque?
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-2" style="background-color: rgb(187, 25, 25)">
+          <h1>COLUMNA2</h1>
+        </div>
+      </div>
+    </div>
 
-          <!---->
+    <!---->
 
-
-
-        <script src="js/bootstrap.min.js"></script>
-    </body>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
-
-
-
