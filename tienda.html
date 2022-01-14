@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="page-nav">
+        <h1>Palacio Nahuel</h1>
+        <button class="button-checkout" onclick="pay()">Carrito</button>
+    </div>
+    <div id="page-content" class="page-content">
+        
+        <div id="all-products" class="all-products">
+            <h1 class="title">Gym</h1>
+            <div class="product-container">
+                <h3>PESAS</h3>
+                <img src="./images/product-1.jpg">
+                <h2>$50</h2>
+                <button class="button-add" onclick="add('Pesas ', 50)">AGREGAR</button>
+            </div>
+            <div class="product-container">
+                <h3>ELEVADOR</h3>
+                <img src="./images/product-2.jpg">
+                <h2>$300</h2>
+                <button class="button-add" onclick="add('Elevador ', 300)">AGREGAR</button>
+            </div>
+            <div class="product-container">
+                <h3>DISCOS</h3>
+                <img src="./images/product-3.jpg">
+                <h2>$700</h2>
+                <button class="button-add" onclick="add('Discos ', 700)">AGREGAR</button>
+            </div>
+            <div class="product-container">
+                <h3>BARRAS</h3>
+                <img src="./images/product-4.jpg">
+                <h2>$2000</h2>
+                <button class="button-add" onclick="add('Barras ', 2000)">AGREGAR</button>
+            </div>
+            <div class="product-container">
+                <h3>MANCUERNA</h3>
+                <img src="./images/product-5.jpg">
+                <h2>$600</h2>
+                <button class="button-add" onclick="add('Mancuerna ', 600)">AGREGAR</button>
+            </div>
+           
+            
+            <div id="product-cards-gym" class="product-cards"></div>
+            <h1 class="title">Cars</h1>
+            <div id="product-cards-car" class="product-cards"></div>
+            <h1 class="title">PC</h1>
+            <div id="product-cards-pc" class="product-cards"></div>
+        </div>
+        
+
+        <div id="order" class="order">
+            <h1>Orden:</h1>
+            <h2 id="order-total">Total: $150</h2>
+            <table id="order-table" class="order-table">
+                <tr>
+                  <th>Cantidad</th>
+                  <th>Detalle</th>
+                  <th>Subtotal</th>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Pesas</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Banco ajustable</td>
+                  <td>100</td>
+                </tr>
+            </table>
+            <h1>Dirección de envío:</h1>
+            <div id="order-shipping" class="order-shipping">
+                <div class="form-group">
+                    <label for="name">Nombre completo:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono:</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="addressLine1">Dirección Linea 1:</label>
+                    <input type="text" name="addressLine1" id="addressLine1">
+                </div>
+                <div class="form-group">
+                    <label for="addressLine2">Dirección Linea 2:</label>
+                    <input type="text" name="addressLine2" id="addressLine2">
+                </div>
+                <div class="form-group">
+                    <label for="city">Ciudad:</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div class="form-group">
+                    <label for="postalCode">Código postal:</label>
+                    <input type="text" name="postalCode" id="postalCode">
+                </div>
+                <div class="form-group">
+                    <label for="state">Provincia:</label>
+                    <input type="text" name="state" id="state">
+                </div>
+                <div class="form-group">
+                    <label for="country">País:</label>
+                    <input type="text" name="country" id="country">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <!-- <script src="whatsapp.js"></script> -->
+</body>
