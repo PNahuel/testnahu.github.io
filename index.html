@@ -1,403 +1,146 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>E-Biblioteca</title>
+<html lang="en">
+<head>
 
-    <link
-      href="https://bootswatch.com/5/simplex/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="css/estilos.css" rel="stylesheet" />
-    <style>
-      div.gallery {
-        border: 1px solid #ccc;
-      }
+  <!-- Page Information
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Nahuel Palacio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-      div.gallery:hover {
-        border: 1px solid #777;
-      }
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      div.gallery img {
-        width: 100%;
-        height: auto;
-      }
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
 
-      div.desc {
-        padding: 15px;
-        text-align: center;
-      }
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton-dark.css">
+  <link rel="stylesheet" href="css/brands.css">
 
-      * {
-        box-sizing: border-box;
-      }
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/avatar.png">
 
-      .responsive {
-        padding: 0 6px;
-        float: left;
-        width: 24.99999%;
-      }
+</head>
+<body>
 
-      @media only screen and (max-width: 700px) {
-        .responsive {
-          width: 49.99999%;
-          margin: 6px 0;
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 10%">
+        <!-- Your Image Here -->
+        <style>
+          img.avatar {
+            border: 2px solid white;
+            border-radius: 50%;
+          }
+          a.small {
+            background: #1DA1F2;
+            border-radius: 50px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            height: 48px;
+            padding: 0 16px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 18px;
+            width: 300px;
+            font-weight: 600;
+            line-height: 48px;
+            letter-spacing: 0.5px;
+            background-color: transparent;
+            border-radius: 8px;
+            cursor: pointer;
+            box-sizing: border-box;
+          }
+        .acuity-embed-button-local {
+          background: #3177ca;
+          padding: 8px 12px;
+          border: 0;
+          border-radius: 4px;
+          text-decoration: none;
+          display: inline-block;
+          text-decoration: none;
+          height: 48px;
+          padding: 0 16px;
+          text-align: center;
+          vertical-align: middle;
+          font-size: 18px;
+          width: 300px;
+          font-weight: 600;
+          line-height: 48px;
+          letter-spacing: 0.5px;
+          white-space: nowrap;
+          background-color: transparent;
+          border-radius: 8px;
+          cursor: pointer;
+          box-sizing: border-box;
+          color: #FFFFFF;
+          background-color: #0A66C2
         }
-      }
+        .acuity-embed-button-local:hover,
+        .acuity-embed-button-local:hover:before {
+          content: 'Mi link de LinkedIn, contratame (porfa).';
+          white-space: initial; }
 
-      @media only screen and (max-width: 500px) {
-        .responsive {
-          width: 100%;
-        }
-      }
+        .acuity-embed-button-local:focus {
+          filter: brightness(90%);
+          color: inherit; }
+          footer {
+            text-align: center;
+            padding: 3px;
+            color: white;
+            font-size: 12px;
+          }
+        </style>
+        <img src="images/avatar.png" srcset="images/avatar@2x.png 2x" class="avatar">
 
-      .clearfix:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand"
-          ><img
-            src="logo-para-la-web-3-chico.png"
-            alt="IES 9-021 Logo"
-            data-retina_logo_url=""
-            class="fusion-standard-logo"
-            width="100"
-            height="80"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarColor02"
-          aria-controls="navbarColor02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html"
-                >Inicio
-                <span class="visually-hidden">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="autoridad.html">Autoridades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="proyecto.html">Proyecto</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Carreras</a
-              >
-              <div class="dropdown-menu">
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="compu.html"
-                  >Computación y Redes</a
-                >
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="optica.html"
-                  >Optica y contactologia</a
-                >
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="gastro.html">Gastronomia</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="podo.hmtl">Podologia</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="meca.html">Mecatronica</a>
-                <div class="dropdown-divider"></div>
-              </div>
-            </li>
-          </ul>
+        <!-- Your Name -->
+        <h1>Palacio Nahuel</h1>
+
+        <!-- Short Bio -->
+        <p>Hola. Esta es una lista de mis redes sociales para que puedas encontrarlas de forma fácil. De nada. Ah, no dijiste gracias? Bueno, no me sorprende.</p>
+
+        <!-- Replace # with your profile URL. Delete whatever you don't need & create your own brand styles in css/brands.css -->
+        <div>
+        <a class="small button-twitter" href="https://www.linkedin.com/in/palacionahuel/"><img class="icon" src="icons/linkedin.svg"></a>
+        <a class="small button-instagram" href="https://www.instagram.com/pnahuel17/"><img class="icon" src="icons/instagram.svg"></a>
+        <a class="small button-github" href="https://github.com/PNahuel"><img class="icon" src="icons/github.svg"></a> <br>
         </div>
-      </div>
-    </nav>
+        <br>
+        <br>
+        <a class="button button-mail" href="mailto:palacionahuel5588@gmail.com"><img class="icon" src="icons/mail.svg">Enviame un mail</a> <br>
+        <a class="button button-slack" href="https://www.superprof.com.ar/estudiante-computacion-ofrece-sus-conocimientos-sobre-hardware-software-sencillo-entender.html"><img class="icon" src="icons/s.png">Mi Superproof</a> <br>
+        <a class="button acuity-embed-button-local" href="https://www.linkedin.com/in/palacionahuel/" target="_blank"><img class="icon" src="icons/calendar.svg">LinkedIn</a><br><link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/21209490.css" id="acuity-button-styles"/><script src="https://embed.acuityscheduling.com/embed/button/21209490.js" async></script>
+        <br>
+        <footer>
+          <p>Código para esta página <a href="https://github.com/PNahuel/PNahuel.github.io">acá</a>.</p>
+        </footer>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-6">
-          <h1><strong>Bienvenido</strong></h1>
-
-          <h3>
-            Esta plataforma esta creada por y para los alumnos del instituto
-            superior IES-9021, aqui podran encontrar el material bibliografico
-            necesario para cada una de las carreras corresponientes.
-          </h3>
-          <div class="alert alert-dismissible alert-success">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="alert"
-            ></button>
-            <strong>ATENCIÓN</strong> Esta pagina aun esta en crecimiento,
-            agradecemos cualquier bug enviarlo a las autoridades.
-          </div>
-        </div>
-        <div class="col-lg-3"></div>
       </div>
     </div>
+  </div>
 
-    <div class="fusion-text">
-      <h3
-        style="text-align: center; --fontSize: 24; line-height: 1.4"
-        data-fontsize="24"
-        data-lineheight="33.6px"
-        class="fusion-responsive-typography-calculated"
-      >
-        <span style="color: #fc5c00"
-          ><strong>ENLACES DE INTERÉS PARA LA COMUNIDAD EDUCATIVA</strong></span
-        >
-      </h3>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="responsive"></div>
-          </div>
-          <div class="col-md-8">
-            <p><strong>EDUC.AR</strong></p>
-            <p>
-              Educ.ar es el portal educativo del Ministerio de Educación de la
-              Argentina destinado a docentes, alumnos, directivos y miembros de
-              la comunidad educativa. El objetivo de educ.ar es que todas las
-              escuelas de la Argentina tengan acceso al mundo digital y a las
-              formas innovadoras de enseñanza aprendizaje que se requieren para
-              la gestión del conocimiento en la sociedad actual.
-            </p>
-            <p><a href="https://www.educ.ar/">Inicio – Educ.ar</a></p>
-            <p><a href="https://www.educ.ar/recursos">Recursos – Educ.ar</a></p>
-            <p>
-              <a href="https://www.youtube.com/user/educarargentina"
-                >Educar Portal – YouTube</a
-              >
-            </p>
-            <p><strong>PLAN NACIONAL DE LECTURA</strong></p>
-            <p>
-              El Plan Nacional de Lecturas trabaja para garantizar a todos y
-              todas su derecho a leer. Distribuye libros y lecturas digitales en
-              escuelas, bibliotecas escolares y espacios alternativos. Convida
-              literatura a las familias y ayuda a construir entornos sociales
-              amigables hacia los libros y la lectura. Ofrece formación a
-              docentes, responsables de bibliotecas y otros mediadores para
-              armar una red de comunidades lectoras.
-            </p>
-            <p>
-              <a
-                href="https://www.educ.ar/recursos/153229/plan-nacional-de-lecturas#gsc.tab=0"
-                >Plan Nacional de Lecturas – Educ.ar</a
-              >
-            </p>
-            <p><strong>PLAN FEDERAL JUANA MANSO</strong></p>
-            <p>
-              <a href="https://juanamanso.edu.ar/inicio"
-                >Plan Federal Juana Manso</a
-              >
-            </p>
-            <p>
-              <a href="https://biblioteca.juanamanso.edu.ar/"
-                >Biblioteca Digital (juanamanso.edu.ar)</a
-              >
-            </p>
-            <p><strong>BIBLIOTECA NACIONAL DE MAESTROS Y MAESTRAS</strong></p>
-            <p>
-              <a href="http://www.bnm.me.gov.ar/"
-                >Libros como puentes (me.gov.ar)</a
-              >
-            </p>
-            <p>
-              <a href="http://www.bnm.me.gov.ar/catalogos/"
-                >www.bnm.me.gov.ar/catalogos/</a
-              >
-            </p>
-            <p><strong>SEGUIMOS LEYENDO</strong></p>
-            <p>
-              Esta biblioteca libre y abierta reúne libros digitales que podrás
-              leer y, también, descargar, transformar y reeditar. Una biblioteca
-              pensada para los lectores y, también, para los productores en el
-              marco de prácticas de lecturas creativas y abordajes transmedia.
-            </p>
-            <p>
-              <a href="https://www.educ.ar/recursos/151395/seguimos-leyendo"
-                >Seguimos leyendo – Educ.ar</a
-              >
-            </p>
-            <p><strong>MAR DE LECTURAS</strong></p>
-            <p>
-              Presenta itinerarios multimedia para sumergirse&nbsp;en la
-              literatura. Algunos conducen a la obra de grandes autores; otros,
-              a un tema o&nbsp;a un género literario&nbsp;y, entre las olas, una
-              propuesta lúdica combina&nbsp;poesía y programación.
-            </p>
-            <p>
-              <a
-                href="https://www.educ.ar/recursos/150858/mar-de-lecturas?from=150936"
-                >Mar de Lecturas – Educ.ar</a
-              >
-            </p>
-            <p><strong>BIBLIOTECA NACIONAL MARIANO MORENO</strong></p>
-            <p>
-              <a href="https://www.bn.gov.ar/"
-                >Inicio – Biblioteca Nacional (bn.gov.ar)</a
-              >
-            </p>
-            <p>
-              <a
-                href="https://www.bn.gov.ar/colecciones-digitales/publicaciones"
-                >Colecciones digitales – Biblioteca Nacional (bn.gov.ar)</a
-              >
-            </p>
-            <p>
-              <strong>INET (INSTITUTO NACIONAL DE EDUCACIÓN TÉCNICA)</strong>
-            </p>
-            <p>
-              El INET es el organismo del Ministerio de Educación y Deportes,
-              que tiene a su cargo la coordinación de la aplicación de las
-              políticas públicas relativas al desarrollo y fortalecimiento de la
-              Educación Técnico Profesional, en los niveles Secundario Técnico,
-              Superior Técnico y de Formación Profesional.
-            </p>
-            <p>
-              <a href="http://www.inet.edu.ar/"
-                >Instituto Nacional de Educación Tecnológica | Sitio web del
-                Instituto Nacional de Educación Tecnológica – Ministerio de
-                Educación – Presidencia de la Nación – República Argentina
-                (inet.edu.ar)</a
-              >
-            </p>
-            <p>
-              <a
-                href="http://www.inet.edu.ar/index.php/material-de-capacitacion/"
-                >Biblioteca | Instituto Nacional de Educación Tecnológica
-                (inet.edu.ar)</a
-              >
-            </p>
-            <p>
-              <strong>INFOD (INSTITUTO NACIONAL DE FORMACIÓN DOCENTE)</strong>
-            </p>
-            <p>
-              El INFoD se constituye en el organismo nacional responsable de
-              impulsar políticas de fortalecimiento de las relaciones entre el
-              sistema de formación docente y los otros niveles del sistema
-              educativo, y de aplicar las regulaciones que rigen el sistema de
-              formación docente en cuanto a evaluación, autoevaluación y
-              acreditación de instituciones y carreras, validez nacional de
-              títulos y certificaciones en todo su ámbito de competencia.
-            </p>
-            <p>
-              <a href="https://infod.educacion.gob.ar/"
-                >INFoD – Ministerio de Educación – Argentina
-                (educacion.gob.ar)</a
-              >
-            </p>
-            <p>
-              <a
-                href="https://infod.educacion.gob.ar/biblioteca-devenir-docente/"
-                >https://infod.educacion.gob.ar/biblioteca-devenir-docente/</a
-              >
-            </p>
-            <p>
-              <strong>MINISTERIO DE CIENCIA TECNOLOGÍA E INNOVACIÓN</strong>
-            </p>
-            <p>
-              El Ministerio de Ciencia, Tecnología e Innovación financia la
-              investigación, provee infraestructura, promueve el vínculo
-              armónico entre los sistemas académico y;productivo y divulga los
-              conocimientos producidos por el quehacer científico-tecnológico y
-              sus aplicaciones en la sociedad.
-            </p>
-            <p>
-              <a href="https://www.argentina.gob.ar/ciencia"
-                >Ministerio de Ciencia, Tecnología e Innovación |
-                Argentina.gob.ar</a
-              >
-            </p>
-            <p>
-              <a href="http://www.biblioteca.mincyt.gob.ar/"
-                >http://www.biblioteca.mincyt.gob.ar/</a
-              >
-            </p>
-            <p>
-              <strong
-                >INTA (INSTITUTO NACIONAL DE TECNOLOGÍA AGROPECUARIA)</strong
-              >
-            </p>
-            <p>
-              <a href="https://www.argentina.gob.ar/inta"
-                >Instituto Nacional de Tecnología Agropecuaria |
-                Argentina.gob.ar</a
-              >
-            </p>
-            <p>
-              <a
-                href="https://inta.gob.ar/portada-documentos/toda-la-biblioteca"
-                >Toda la biblioteca | Instituto Nacional de Tecnología
-                Agropecuaria (inta.gob.ar)</a
-              >
-            </p>
-            <p><strong>DIRECCIÓN GENERAL DE ESCUELAS</strong></p>
-            <p>
-              <a href="https://www.mendoza.edu.ar/edm-2021/"
-                >Escuela Digital – Mendoza – www.mendoza.edu.ar</a
-              >
-            </p>
-            <p><strong>PLAN DE LECTURA Y ESCRITURA MENDOZA</strong></p>
-            <p>
-              <a href="https://www.mendoza.edu.ar/plem/"
-                >Plan de Lectura y Escritura Mendoza – www.mendoza.edu.ar</a
-              >
-            </p>
-            <p><strong>MATERIALES Y RECURSOS</strong></p>
-            <p>
-              <a href="https://www.mendoza.edu.ar/materiales-y-recursos/"
-                >Materiales y Recursos – www.mendoza.edu.ar</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2"></div>
-    </div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GR82G97BBQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4" style="background-color: rgb(55, 58, 60)"></div>
-        <div class="col-lg-4" style="background-color: rgb(55, 58, 60)">
-          <font color="#eaeaea"
-            ><p>Hecho por <a href="personal.html">Palacio Nahuel.</a></p>
-            <p>
-              Codigo realizado bajo la
-              <a
-                href="https://github.com/thomaspark/bootswatch/blob/master/LICENSE"
-                >MIT Licence.</a
-              >
-            </p>
-            <p>
-              Basado en <a href="https://getbootstrap.com/">Bootstrap.</a>
-            </p></font
-          >
-        </div>
-        <div class="col-lg-4" style="background-color: rgb(55, 58, 60)"></div>
-      </div>
-    </div>
+  gtag('config', 'G-GR82G97BBQ');
+</script>
 
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>
